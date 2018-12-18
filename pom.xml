@@ -38,11 +38,12 @@
 			<scope>runtime</scope>
 		</dependency>
 		
-		<dependency>
+		<!-- filter 역할은 lucy-xss-servlet이 해주기 때문에 필수는 아님 -->
+		<!-- <dependency>
 			<groupId>com.navercorp.lucy</groupId>
 			<artifactId>lucy-xss</artifactId>
 			<version>1.6.3</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>com.navercorp.lucy</groupId>
