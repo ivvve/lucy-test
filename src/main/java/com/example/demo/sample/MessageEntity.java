@@ -5,6 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * 클라이언트로 부터의 Message를 담는 Entity class
+ * @see MessageDto
+ */
 @Entity
 public class MessageEntity {
 	@Id

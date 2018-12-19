@@ -1,5 +1,10 @@
 package com.example.demo.sample;
 
+/**
+ * Entity의 역할을 줄이기 위한
+ * 값만을 갖는 Message DTO class
+ * @see MessageEntity
+ */
 public class MessageDto {
 	private Long id;
 	private String name;
