@@ -14,9 +14,9 @@ public class LucyTest {
 
 		// when
 		String clean = XssSaxFilter.getInstance().doFilter(dirty);
-		System.out.println(clean);
+		System.out.println(clean); // <!-- Not Allowed Tag Filtered -->&lt;script&gt;alert('dirty');&lt;/script&gt;
 		clean = clean.replace("<!-- Not Allowed Tag Filtered -->", "");
-		System.out.println(clean);
+		System.out.println(clean); // &lt;script&gt;alert('dirty');&lt;/script&gt;
 
 		// then
 		assertThat(clean).isNotEqualTo(dirty);
